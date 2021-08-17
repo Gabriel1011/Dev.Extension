@@ -22,7 +22,7 @@ namespace Dev.Extensions.Test
     {
       string teste = null;
 
-      Assert.IsNull(teste.ToDecimalNull());
+      Assert.Null(teste.ToDecimalNull());
     }
 
     [Fact]
@@ -44,7 +44,7 @@ namespace Dev.Extensions.Test
     {
       string teste = null;
 
-      Assert.Equal(true, teste.IsNull());
+      Assert.True(teste.IsNull());
     }
 
     [Fact]
@@ -52,7 +52,7 @@ namespace Dev.Extensions.Test
     {
       string teste = "";
 
-      Assert.Equal(false, teste.IsNull());
+      Assert.False(teste.IsNull());
     }
 
     [Fact]
@@ -60,7 +60,7 @@ namespace Dev.Extensions.Test
     {
       string teste = "";
 
-      Assert.Equal(true, teste.IsEmpty());
+      Assert.True(teste.IsEmpty());
     }
 
     [Fact]
@@ -68,7 +68,7 @@ namespace Dev.Extensions.Test
     {
       string teste = "A";
 
-      Assert.Equal(false, teste.IsEmpty());
+      Assert.False(teste.IsEmpty());
     }
 
 
@@ -78,7 +78,7 @@ namespace Dev.Extensions.Test
       string teste = "";
       string teste1 = null;
 
-      Assert.Equal(true, teste.IsNullOrEmpty() && teste1.IsNullOrEmpty());
+      Assert.True(teste.IsNullOrEmpty() && teste1.IsNullOrEmpty());
     }
 
     [Fact]
@@ -87,7 +87,7 @@ namespace Dev.Extensions.Test
       string teste = "a";
       string teste1 = "";
 
-      Assert.Equal(false, teste.IsNullOrEmpty() && teste1.IsNullOrEmpty());
+      Assert.False(teste.IsNullOrEmpty() && teste1.IsNullOrEmpty());
     }
   }
 }
